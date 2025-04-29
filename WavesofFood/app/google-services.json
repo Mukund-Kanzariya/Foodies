@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "409551845375",
+    "project_id": "foodies-4361e",
+    "storage_bucket": "foodies-4361e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409551845375:android:5138bb2bd062aea0ff99ca",
+        "android_client_info": {
+          "package_name": "com.example.wavesoffood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK3GGpWdstfJScA0bkEmzw5kiQdMEgm4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="25dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/buyAgainFoodImageid"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                android:elevation="20dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.107"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/buyAgainFoodNameid"
+                android:layout_width="88dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Food Name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/buyAgainFoodImageid"
+                app:layout_constraintStart_toEndOf="@+id/buyAgainFoodImageid"
+                app:layout_constraintTop_toTopOf="@+id/buyAgainFoodImageid"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/buyAgainFoodPriceid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="rs.100"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/buyAgainFoodNameid"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="@+id/buyAgainFoodNameid"
+                app:layout_constraintTop_toBottomOf="@+id/buyAgainFoodNameid" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="88dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="25dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Quntity"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/buyAgainFoodNameid"
+                app:layout_constraintStart_toEndOf="@+id/buyAgainFoodNameid"
+                app:layout_constraintTop_toTopOf="@+id/buyAgainFoodNameid" />
+
+            <TextView
+                android:id="@+id/buyAgainFoodQuantityid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView10"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Total"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/buyAgainFoodImageid"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/buyAgainFoodImageid"
+                app:layout_constraintTop_toBottomOf="@+id/buyAgainFoodImageid" />
+
+            <TextView
+                android:id="@+id/buyAgainTotalid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rs.150"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:layout_marginStart="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewTotal"
+                app:layout_constraintStart_toEndOf="@+id/textViewTotal"
+                app:layout_constraintTop_toTopOf="@+id/textViewTotal" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/orderStatusButton"
+                android:layout_width="118dp"
+                android:layout_height="37dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Pending"
+                android:textColor="@color/white"
+                android:enabled="false"
+                android:clickable="false"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

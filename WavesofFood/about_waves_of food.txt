@@ -1,0 +1,3 @@
+main Activity: constrait layout ma ek bottom navigation bar levani tene set karvano 
+
+tema badha menu rakhava na hoi tethi ek menu name ne android reasource file banayvi ane ema badha icon mukya, ema rahelo code ee drawable ma icon hase like history,home,cart etc with .xml extension because we create a vector assets (history.xml etc. ma rahelo code lakhelo nathi ee icon add karo etle aavi jay)

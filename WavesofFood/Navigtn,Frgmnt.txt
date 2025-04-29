@@ -1,0 +1,19 @@
+frist of all 
+inside main activity add navigation view ,
+then create menus for navigation res->new->android resource Directory -> menu 
+and inside menu.xml file add menu items -> add title or icon then 
+
+go to main activity.xml and inside it navigation code add menu and add static part of the all page. inside the main activity
+
+then right click on com.example.packagename and select new package and then right click on it and create new blank fragment, create multiple fragment as per your requirement 
+
+then creare navigation directory right click on res and select navigation then right click on it and creare new navigation resource file
+
+
+then add fragments on this file from a icon same as mobile 
+
+then copy id of all navigations fragments and paste it to menu.xml file one by one 
+
+
+
+then add NavhostFragment to the main activity then add some code to mainActivity and fragemtns is done.

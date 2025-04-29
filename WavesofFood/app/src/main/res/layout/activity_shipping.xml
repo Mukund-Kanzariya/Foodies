@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShippingActivity">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/textViewShipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Details"
+        android:textSize="28sp"
+        android:textColor="@color/textColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/nameShipping"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:hint="Full Name"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewShipping"
+        app:layout_constraintStart_toStartOf="@+id/textViewShipping"
+        app:layout_constraintEnd_toEndOf="@+id/textViewShipping" />
+
+    <EditText
+        android:id="@+id/phoneShipping"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/nameShipping"
+        app:layout_constraintStart_toStartOf="@+id/nameShipping"
+        app:layout_constraintEnd_toEndOf="@+id/nameShipping" />
+
+    <EditText
+        android:id="@+id/emailShipping"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/phoneShipping"
+        app:layout_constraintStart_toStartOf="@+id/phoneShipping"
+        app:layout_constraintEnd_toEndOf="@+id/phoneShipping" />
+
+    <EditText
+        android:id="@+id/cityShipping"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:hint="City"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/emailShipping"
+        app:layout_constraintStart_toStartOf="@+id/emailShipping"
+        app:layout_constraintEnd_toEndOf="@+id/emailShipping" />
+
+    <EditText
+        android:id="@+id/addressShipping"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:hint="Full Address"
+        android:paddingLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/cityShipping"
+        app:layout_constraintStart_toStartOf="@+id/cityShipping"
+        app:layout_constraintEnd_toEndOf="@+id/cityShipping" />
+
+    <Spinner
+        android:id="@+id/paymentMethodSpinner"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:entries="@array/payment_methods"
+        app:layout_constraintTop_toBottomOf="@+id/addressShipping"
+        app:layout_constraintStart_toStartOf="@+id/addressShipping"
+        app:layout_constraintEnd_toEndOf="@+id/addressShipping" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/PlaceOrder"
+        android:layout_width="157dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/greenbutton"
+        android:text="PLACE ORDER"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/paymentMethodSpinner"
+        app:layout_constraintStart_toStartOf="@+id/paymentMethodSpinner"
+        app:layout_constraintEnd_toEndOf="@+id/paymentMethodSpinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

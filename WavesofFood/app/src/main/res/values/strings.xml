@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Foodies</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="payment_methods">
+        <!--    <item>Credit Card</item>-->
+        <!--    <item>Debit Card</item>-->
+        <!--    <item>Net Banking</item>-->
+        <!--    <item>UPI</item>-->
+        <item>Cash on Delivery</item>
+    </string-array>
+</resources>
